@@ -15,7 +15,7 @@ import java.lang.Math;
 				{
  					reminder = num%10;
 					num /=10;
-					decimal_num= decimal_num+(int) (reminder*j);
+					decimal_num+=(num%10*j);
 					j *= 2;
 				}
 				j=0;
