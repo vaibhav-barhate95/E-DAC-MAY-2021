@@ -21,13 +21,14 @@ class Program_24
 					
 					}
 				
-					System.out.println("Decimal number is "+decimal_num);
+					
 					while(decimal_num>0)
 					{
 						arr[z] = decimal_num%8;
 						decimal_num /= 8;
 						z++;
 					}
+					System.out.print("Octal No : ");
 					for(int k=z-1;z>=0;z--)
 					System.out.print(arr[z]);
 	
