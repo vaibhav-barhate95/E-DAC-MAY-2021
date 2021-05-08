@@ -3,9 +3,8 @@ import java.lang.Math;
 class Program_24
 {
 		public static void main(String[] args){
-			int index=0;
-		 int i=2,decimal_num = 0;
-		 int reminder=0;
+			
+		 int i=2,decimal_num = 0; 
 		 int j=0,z=0;
 		 int arr[] = new int[20];
 			Scanner scan = new Scanner(System.in);
@@ -14,14 +13,11 @@ class Program_24
 			int num = scan.nextInt();
 					
 					while(num>0)
-					{
-						reminder = (int) (num%10);
+					{										
+						decimal_num+=(num%10*(Math.pow(i,j++)));
 						num /=10;
-						decimal_num= decimal_num+(int) (reminder*(Math.pow(i,j++)));
-					
 					}
 				
-					
 					while(decimal_num>0)
 					{
 						arr[z] = decimal_num%8;
@@ -35,3 +31,4 @@ class Program_24
 	}
 	
 }
+
